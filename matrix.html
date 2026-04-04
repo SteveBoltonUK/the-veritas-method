@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Human-AI Bias Matrix™ — The Veritas Method®</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page-hero">
+  <h1>The Human-AI Bias Matrix&trade;</h1>
+  <div class="subtitle">The Cognitive Framework for Smarter AI Partnership</div>
+  <div class="accent-line"></div>
+</div>
+<p class="page-hero-intro">Individuals and organisations often fail with AI because they do not understand where humans should lead, where AI helps most, where the magic happens, and where the risks amplify. The Human-AI Bias Matrix&trade; teaches you to think logically and critically about every AI interaction.</p>
+
+<section class="section" style="padding-top:0">
+
+  <!-- Axis labels -->
+  <div style="max-width:900px;margin:0 auto">
+    <div style="display:flex;justify-content:space-between;margin-bottom:.5rem;font-family:var(--font-head);font-size:1rem;letter-spacing:.06em;color:var(--sage);opacity:.7">
+      <span>&#8593; High Human Input</span>
+      <span>High AI Input &#8594;</span>
+    </div>
+
+    <div class="matrix-grid">
+      <!-- Top Left: High Human / Low AI -->
+      <div class="card matrix-card" style="animation-delay:.1s">
+        <div class="matrix-icon">&#9888;</div>
+        <h3>Human Leads, AI Absent</h3>
+        <p class="matrix-desc">Human capability brings personal and cultural context, creativity, ethical judgment, long-term thinking and wisdom. But without AI involvement, progress is slower and intelligence gaps remain.</p>
+        <p class="matrix-risk">Risk: Sub-optimal outcomes, slow progress, missed opportunities.</p>
+      </div>
+
+      <!-- Top Right: High Human / High AI (OPTIMAL) -->
+      <div class="card matrix-card optimal" style="animation-delay:.2s">
+        <div class="matrix-icon">&#9733;</div>
+        <h3>The Optimal Zone &#9733;</h3>
+        <p class="matrix-desc">Human wisdom, intuition, creativity and values merged with AI processing power. This is where The Veritas Method&reg; operates. Together you think better than either could alone.</p>
+        <p class="matrix-result">Result: Superior thinking, decision-making and outcomes leveraging complementary strengths.</p>
+      </div>
+
+      <!-- Bottom Left: Low Human / Low AI -->
+      <div class="card matrix-card" style="animation-delay:.3s">
+        <div class="matrix-icon">&#9888;&#9888;</div>
+        <h3>Critical Failure Zone</h3>
+        <p class="matrix-desc">Neither human nor AI working anywhere near full potential. The lowest level of thinking and consistently suboptimal outcomes.</p>
+        <p class="matrix-risk">Risk: The worst possible outcome. Avoid at all costs.</p>
+      </div>
+
+      <!-- Bottom Right: High AI / Low Human -->
+      <div class="card matrix-card" style="animation-delay:.4s">
+        <div class="matrix-icon">&#9888;</div>
+        <h3>AI Leads, Human Absent</h3>
+        <p class="matrix-desc">AI strength in pattern recognition, data processing and statistical analysis at scale. But blind trust in AI outputs without human context creates catastrophic errors and AI Slop.</p>
+        <p class="matrix-risk">Risk: Dangerous over-reliance. AI Slop. Catastrophic errors from lack of human judgment.</p>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:space-between;margin-top:.5rem;font-family:var(--font-head);font-size:1rem;letter-spacing:.06em;color:var(--sage);opacity:.7">
+      <span>&#8595; Low Human Input</span>
+      <span></span>
+    </div>
+  </div>
+
+  <!-- SELF-ASSESSMENT -->
+  <div class="assessment">
+    <h2>Where Are You Right Now?</h2>
+
+    <div class="slider-group">
+      <label>How much human thought and judgment do you bring to your AI interactions?</label>
+      <div class="slider-row">
+        <input type="range" min="1" max="10" value="5" class="assess-slider" oninput="this.nextElementSibling.textContent=this.value">
+        <span class="slider-val">5</span>
+      </div>
+    </div>
+
+    <div class="slider-group">
+      <label>How frequently do you engage with AI tools in your work or life?</label>
+      <div class="slider-row">
+        <input type="range" min="1" max="10" value="5" class="assess-slider" oninput="this.nextElementSibling.textContent=this.value">
+        <span class="slider-val">5</span>
+      </div>
+    </div>
+
+    <div class="slider-group">
+      <label>How often do you critically review AI outputs before acting on them?</label>
+      <div class="slider-row">
+        <input type="range" min="1" max="10" value="5" class="assess-slider" oninput="this.nextElementSibling.textContent=this.value">
+        <span class="slider-val">5</span>
+      </div>
+    </div>
+
+    <div class="slider-group">
+      <label>How much personal context do you give AI before asking for help?</label>
+      <div class="slider-row">
+        <input type="range" min="1" max="10" value="5" class="assess-slider" oninput="this.nextElementSibling.textContent=this.value">
+        <span class="slider-val">5</span>
+      </div>
+    </div>
+
+    <div class="slider-group">
+      <label>How intentional are you about developing your AI partnership skills?</label>
+      <div class="slider-row">
+        <input type="range" min="1" max="10" value="5" class="assess-slider" oninput="this.nextElementSibling.textContent=this.value">
+        <span class="slider-val">5</span>
+      </div>
+    </div>
+
+    <button class="btn btn-orange assess-btn" onclick="findZone()">Find My Zone</button>
+
+    <div class="assess-result" id="assessResult"></div>
+  </div>
+
+</section>
+
+<script>
+function findZone(){
+  const sliders=document.querySelectorAll('.assess-slider');
+  const vals=Array.from(sliders).map(s=>parseInt(s.value));
+
+  // Human score: Q1 (thought/judgment), Q3 (critical review), Q4 (personal context)
+  const humanScore=(vals[0]+vals[2]+vals[3])/3;
+  // AI score: Q2 (frequency), Q4 (context given = engagement depth), Q5 (intentional development)
+  const aiScore=(vals[1]+vals[3]+vals[4])/3;
+
+  const highHuman=humanScore>=5.5;
+  const highAI=aiScore>=5.5;
+
+  const result=document.getElementById('assessResult');
+  result.style.display='block';
+
+  let title,desc,link,linkText;
+
+  if(highHuman&&highAI){
+    title='The Optimal Zone &#9733;';
+    desc='You are bringing strong human judgment and actively engaging with AI. You are operating in the zone where The Veritas Method&reg; delivers the greatest results. Keep deepening your practice with The 6 Habits to compound your advantage over time.';
+    link='habits.html';
+    linkText='Deepen your practice with The 6 Habits';
+  }else if(highHuman&&!highAI){
+    title='Human Leads, AI Absent';
+    desc='You bring strong critical thinking and personal judgment, but you are not yet engaging deeply enough with AI to unlock its full potential. You have the hardest part already covered. Now it is time to build your AI engagement through consistent practice and experimentation.';
+    link='habits.html';
+    linkText='Build your AI engagement with The 6 Habits';
+  }else if(!highHuman&&highAI){
+    title='AI Leads, Human Absent';
+    desc='You are actively using AI, but you may not be bringing enough human thought, context, and critical review to your interactions. This is the zone where AI Slop and poor outcomes are most likely. Focus on the Partnership Principles to bring more of yourself to every interaction.';
+    link='principles.html';
+    linkText='Strengthen your human input with the Partnership Principles';
+  }else{
+    title='Critical Failure Zone';
+    desc='Neither your human input nor your AI engagement is where it needs to be. The good news: you have enormous upside ahead. Start with the Partnership Principles to build your foundation, then layer in The 6 Habits to develop consistent practice.';
+    link='principles.html';
+    linkText='Start your journey with the Partnership Principles';
+  }
+
+  result.innerHTML=`<h3>${title}</h3><p>${desc}</p><a href="${link}">${linkText} &rarr;</a>`;
+}
+</script>
+
+<script src="nav.js"></script>
+</body>
+</html>
