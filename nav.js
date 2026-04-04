@@ -6,6 +6,7 @@
     {href:'habits.html',label:'6 Habits'},
     {href:'values.html',label:'Values'},
     {href:'matrix.html',label:'Bias Matrix'},
+    {href:'case-study.html',label:'Case Study'},
     {href:'nextsteps.html',label:'Next Steps'}
   ];
 
