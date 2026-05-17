@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module 4: The Human-AI Bias Matrix&trade; &mdash; The Veritas Method&reg; Online Course</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="dashboard.html">Course Dashboard</a>
+  <span>&rsaquo;</span>
+  Module 4
+</div>
+
+<!-- MODULE HERO -->
+<div class="module-hero">
+  <div class="module-label">Module 4 of 5</div>
+  <h1>The Human-AI Bias Matrix&trade;</h1>
+  <div class="subtitle">The Cognitive Framework for Smarter AI Partnership</div>
+  <div class="accent-line"></div>
+</div>
+
+<!-- MODULE INTRO -->
+<p class="module-intro">Individuals and organisations often fail with AI because they do not understand where humans should lead, where AI helps most, where the magic happens, and where the risks amplify. The Human-AI Bias Matrix&trade; teaches you to think logically and critically about every AI interaction.</p>
+
+<!-- MODULE PROGRESS -->
+<div class="module-progress-bar">
+  <div class="progress-container">
+    <div class="progress-bar" data-progress-bar="4"></div>
+  </div>
+  <div class="progress-label">Module Progress</div>
+</div>
+
+<!-- LEARNING OBJECTIVES -->
+<div class="objectives-box">
+  <h3>What You&rsquo;ll Learn</h3>
+  <ul>
+    <li>How to use the Human-AI Bias Matrix&trade; to evaluate every AI interaction</li>
+    <li>The four zones of human-AI partnership and what each means for your outcomes</li>
+    <li>How to assess where you currently sit in the matrix through an interactive self-assessment</li>
+    <li>Practical strategies for moving into and staying in The Optimal Zone</li>
+  </ul>
+</div>
+
+<!-- LESSONS -->
+<div class="lessons-container">
+
+  <!-- LESSON 1 -->
+  <div class="lesson">
+    <div class="lesson-header" onclick="toggleLesson(this)">
+      <div class="lesson-num">01</div>
+      <div class="lesson-title">Understanding The Matrix</div>
+      <div class="lesson-check" data-lesson-check="4-1"></div>
+      <div class="lesson-chevron">&#9658;</div>
+    </div>
+    <div class="lesson-content">
+      <div class="lesson-inner">
+        <p>The Human-AI Bias Matrix&trade; maps every interaction into one of four zones based on two dimensions: the level of human input and the level of AI input. Understanding these zones is the first step to consistently better outcomes.</p>
+
+        <h4>The Four Zones</h4>
+
+        <div class="matrix-grid">
+          <!-- Top Left: High Human / Low AI -->
+          <div class="card matrix-card" style="animation-delay:.1s">
+            <div class="matrix-icon">&#9888;</div>
+            <h3>Human Leads, AI Absent</h3>
+            <p class="matrix-desc">High human input, low AI input. Human capability brings personal and cultural context, creativity, ethical judgment, long-term thinking and wisdom. But without AI involvement, progress is slower and intelligence gaps remain.</p>
+            <p class="matrix-risk">Risk: Sub-optimal outcomes, slow progress, missed opportunities.</p>
+          </div>
+
+          <!-- Top Right: High Human / High AI (OPTIMAL) -->
+          <div class="card matrix-card optimal" style="animation-delay:.2s">
+            <div class="matrix-icon">&#9733;</div>
+            <h3>The Optimal Zone &#9733;</h3>
+            <p class="matrix-desc">High human input, high AI input. Human wisdom, intuition, creativity and values merged with AI processing power. This is where The Veritas Method&reg; operates. Together you think better than either could alone.</p>
+            <p class="matrix-result">Result: Superior thinking, decision-making and outcomes leveraging complementary strengths.</p>
+          </div>
+
+          <!-- Bottom Left: Low Human / Low AI -->
+          <div class="card matrix-card" style="animation-delay:.3s">
+            <div class="matrix-icon">&#9888;&#9888;</div>
+            <h3>Critical Failure Zone</h3>
+            <p class="matrix-desc">Low human input, low AI input. Neither human nor AI working anywhere near full potential. The lowest level of thinking and consistently suboptimal outcomes.</p>
+            <p class="matrix-risk">Risk: The worst possible outcome. Avoid at all costs.</p>
+          </div>
+
+          <!-- Bottom Right: High AI / Low Human -->
+          <div class="card matrix-card" style="animation-delay:.4s">
+            <div class="matrix-icon">&#9888;</div>
+            <h3>AI Leads, Human Absent</h3>
+            <p class="matrix-desc">High AI input, low human input. AI strength in pattern recognition, data processing and statistical analysis at scale. But blind trust in AI outputs without human context creates catastrophic errors and AI Slop.</p>
+            <p class="matrix-risk">Risk: Dangerous over-reliance. AI Slop. Catastrophic errors from lack of human judgment.</p>
+          </div>
+        </div>
+
+        <button class="complete-btn" onclick="toggleLessonComplete(4, 1, this)">Mark as Complete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 2 -->
+  <div class="lesson">
+    <div class="lesson-header" onclick="toggleLesson(this)">
+      <div class="lesson-num">02</div>
+      <div class="lesson-title">Finding Your Zone</div>
+      <div class="lesson-check" data-lesson-check="4-2"></div>
+      <div class="lesson-chevron">&#9658;</div>
+    </div>
+    <div class="lesson-content">
+      <div class="lesson-inner">
+        <p>Before you can move to The Optimal Zone, you need to know where you are right now. This interactive self-assessment will help you identify your current zone and understand what it means for your AI partnership.</p>
+
+        <div class="assessment">
+          <h2>Where Are You Right Now?</h2>
+
+          <div class="slider-group">
+            <label>How much human thought and judgment do you bring to your AI interactions?</label>
+            <div class="slider-row">
+              <input type="range" min="1" max="10" value="5" class="assess-slider" oninput="this.nextElementSibling.textContent=this.value">
+              <span class="slider-val">5</span>
+            </div>
+          </div>
+
+          <div class="slider-group">
+            <label>How frequently do you engage with AI tools in your work or life?</label>
+            <div class="slider-row">
+              <input type="range" min="1" max="10" value="5" class="assess-slider" oninput="this.nextElementSibling.textContent=this.value">
+              <span class="slider-val">5</span>
+            </div>
+          </div>
+
+          <div class="slider-group">
+            <label>How often do you critically review AI outputs before acting on them?</label>
+            <div class="slider-row">
+              <input type="range" min="1" max="10" value="5" class="assess-slider" oninput="this.nextElementSibling.textContent=this.value">
+              <span class="slider-val">5</span>
+            </div>
+          </div>
+
+          <div class="slider-group">
+            <label>How much personal context do you give AI before asking for help?</label>
+            <div class="slider-row">
+              <input type="range" min="1" max="10" value="5" class="assess-slider" oninput="this.nextElementSibling.textContent=this.value">
+              <span class="slider-val">5</span>
+            </div>
+          </div>
+
+          <div class="slider-group">
+            <label>How intentional are you about developing your AI partnership skills?</label>
+            <div class="slider-row">
+              <input type="range" min="1" max="10" value="5" class="assess-slider" oninput="this.nextElementSibling.textContent=this.value">
+              <span class="slider-val">5</span>
+            </div>
+          </div>
+
+          <button class="btn btn-orange assess-btn" onclick="findZone()">Find My Zone</button>
+
+          <div class="assess-result" id="assessResult"></div>
+        </div>
+
+        <button class="complete-btn" onclick="toggleLessonComplete(4, 2, this)">Mark as Complete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 3 -->
+  <div class="lesson">
+    <div class="lesson-header" onclick="toggleLesson(this)">
+      <div class="lesson-num">03</div>
+      <div class="lesson-title">Moving To The Optimal Zone</div>
+      <div class="lesson-check" data-lesson-check="4-3"></div>
+      <div class="lesson-chevron">&#9658;</div>
+    </div>
+    <div class="lesson-content">
+      <div class="lesson-inner">
+        <p>Knowing your zone is powerful. Moving to The Optimal Zone is transformative. This lesson gives you practical strategies for increasing both your human input and your AI engagement so you can consistently operate where the best outcomes happen.</p>
+
+        <h4>Key Strategies</h4>
+        <ul>
+          <li>Increase your human input by bringing more personal context, critical thinking and ethical judgment to every interaction</li>
+          <li>Increase your AI engagement by using AI tools more frequently and more intentionally</li>
+          <li>Build the habit of reviewing and refining AI outputs rather than accepting them at face value</li>
+          <li>Use The Veritas Method&reg; framework to structure your interactions for maximum partnership value</li>
+        </ul>
+
+        <div class="prompt-box">
+          <div class="prompt-label">Try This Prompt</div>
+          <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+          <div class="prompt-text">Based on my self-assessment, I scored approximately [HUMAN SCORE] for human input and [AI SCORE] for AI engagement. According to the Human-AI Bias Matrix, I'm currently in [YOUR ZONE]. Help me create a specific action plan to move toward The Optimal Zone. What are the 3 most impactful changes I could make this week?</div>
+        </div>
+
+        <button class="complete-btn" onclick="toggleLessonComplete(4, 3, this)">Mark as Complete</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- QUIZ -->
+<div class="quiz-section">
+  <h3>Module 4 Quiz</h3>
+
+  <div class="quiz-question" data-question="q1">
+    <p><strong>1.</strong> Which zone does The Veritas Method&reg; aim to help you reach?</p>
+    <div class="quiz-option">
+      <input type="radio" name="q1" id="q1a" value="a">
+      <label for="q1a">Human Leads, AI Absent</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q1" id="q1b" value="b">
+      <label for="q1b">The Optimal Zone</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q1" id="q1c" value="c">
+      <label for="q1c">AI Leads, Human Absent</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q1" id="q1d" value="d">
+      <label for="q1d">Critical Failure Zone</label>
+    </div>
+  </div>
+
+  <div class="quiz-question" data-question="q2">
+    <p><strong>2.</strong> What is &ldquo;AI Slop&rdquo;?</p>
+    <div class="quiz-option">
+      <input type="radio" name="q2" id="q2a" value="a">
+      <label for="q2a">A type of AI model</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q2" id="q2b" value="b">
+      <label for="q2b">Poor outputs from over-reliance on AI without human judgment</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q2" id="q2c" value="c">
+      <label for="q2c">A coding technique</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q2" id="q2d" value="d">
+      <label for="q2d">An AI training method</label>
+    </div>
+  </div>
+
+  <div class="quiz-question" data-question="q3">
+    <p><strong>3.</strong> In the Human-AI Bias Matrix, what creates &ldquo;The Optimal Zone&rdquo;?</p>
+    <div class="quiz-option">
+      <input type="radio" name="q3" id="q3a" value="a">
+      <label for="q3a">Using AI as much as possible</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q3" id="q3b" value="b">
+      <label for="q3b">Avoiding AI entirely</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q3" id="q3c" value="c">
+      <label for="q3c">High human input combined with high AI input</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q3" id="q3d" value="d">
+      <label for="q3d">Low effort from both human and AI</label>
+    </div>
+  </div>
+
+  <button class="btn btn-orange quiz-submit" onclick="checkQuiz()">Submit Answers</button>
+  <div class="quiz-result" id="quizResult"></div>
+</div>
+
+<!-- MODULE NAVIGATION -->
+<div class="module-nav">
+  <a href="module3.html">&larr; Module 3</a>
+  <a href="module5.html">Module 5 &rarr;</a>
+</div>
+
+<!-- SCRIPTS -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Check lesson completion status and update buttons
+  for (var i = 1; i <= 3; i++) {
+    var key = 'lesson-4-' + i;
+    var done = localStorage.getItem(key) === 'true';
+    if (done) {
+      var check = document.querySelector('[data-lesson-check="4-' + i + '"]');
+      if (check) check.classList.add('checked');
+
+      // Find the corresponding complete button
+      var lessons = document.querySelectorAll('.lesson');
+      if (lessons[i - 1]) {
+        var btn = lessons[i - 1].querySelector('.complete-btn');
+        if (btn) {
+          btn.textContent = 'Completed';
+          btn.classList.add('completed');
+        }
+      }
+    }
+  }
+});
+
+// Self-Assessment
+function findZone() {
+  var sliders = document.querySelectorAll('.assess-slider');
+  var vals = [];
+  for (var i = 0; i < sliders.length; i++) {
+    vals.push(parseInt(sliders[i].value));
+  }
+
+  // Human score: Q1 (thought/judgment), Q3 (critical review), Q4 (personal context)
+  var humanScore = (vals[0] + vals[2] + vals[3]) / 3;
+  // AI score: Q2 (frequency), Q4 (context given = engagement depth), Q5 (intentional development)
+  var aiScore = (vals[1] + vals[3] + vals[4]) / 3;
+
+  var highHuman = humanScore >= 5.5;
+  var highAI = aiScore >= 5.5;
+
+  var result = document.getElementById('assessResult');
+  result.style.display = 'block';
+
+  var title, desc;
+
+  if (highHuman && highAI) {
+    title = 'The Optimal Zone &#9733;';
+    desc = 'You are bringing strong human judgment and actively engaging with AI. You are operating in the zone where The Veritas Method&reg; delivers the greatest results. Keep deepening your practice to compound your advantage over time.';
+  } else if (highHuman && !highAI) {
+    title = 'Human Leads, AI Absent';
+    desc = 'You bring strong critical thinking and personal judgment, but you are not yet engaging deeply enough with AI to unlock its full potential. You have the hardest part already covered. Now it is time to build your AI engagement through consistent practice and experimentation.';
+  } else if (!highHuman && highAI) {
+    title = 'AI Leads, Human Absent';
+    desc = 'You are actively using AI, but you may not be bringing enough human thought, context, and critical review to your interactions. This is the zone where AI Slop and poor outcomes are most likely. Focus on bringing more of yourself to every interaction.';
+  } else {
+    title = 'Critical Failure Zone';
+    desc = 'Neither your human input nor your AI engagement is where it needs to be. The good news: you have enormous upside ahead. Start by building your foundation with the Partnership Principles, then layer in consistent AI practice.';
+  }
+
+  result.innerHTML = '<h3>' + title + '</h3><p>' + desc + '</p><p style="font-size:.85rem;opacity:.7;margin-top:.5rem">Human Input Score: ' + humanScore.toFixed(1) + ' | AI Engagement Score: ' + aiScore.toFixed(1) + '</p>';
+}
+
+// Quiz answers
+var quizAnswers = {
+  q1: 'b',
+  q2: 'b',
+  q3: 'c'
+};
+
+function checkQuiz() {
+  var score = 0;
+  var total = Object.keys(quizAnswers).length;
+
+  // Clear previous highlights
+  document.querySelectorAll('.quiz-option').forEach(function(opt) {
+    opt.classList.remove('correct', 'incorrect');
+  });
+
+  for (var q in quizAnswers) {
+    var selected = document.querySelector('input[name="' + q + '"]:checked');
+    if (selected) {
+      var option = selected.closest('.quiz-option');
+      if (selected.value === quizAnswers[q]) {
+        score++;
+        option.classList.add('correct');
+      } else {
+        option.classList.add('incorrect');
+        // Highlight correct answer
+        var correctInput = document.querySelector('input[name="' + q + '"][value="' + quizAnswers[q] + '"]');
+        if (correctInput) correctInput.closest('.quiz-option').classList.add('correct');
+      }
+    }
+  }
+
+  var result = document.getElementById('quizResult');
+  result.style.display = 'block';
+
+  if (score === total) {
+    result.className = 'quiz-result perfect';
+    result.innerHTML = '<strong>Perfect Score!</strong> You got ' + score + '/' + total + '. You have a solid understanding of the Human-AI Bias Matrix.';
+  } else if (score >= total / 2) {
+    result.className = 'quiz-result good';
+    result.innerHTML = '<strong>Good effort!</strong> You got ' + score + '/' + total + '. Review the lessons you missed and try again.';
+  } else {
+    result.className = 'quiz-result retry';
+    result.innerHTML = '<strong>Keep learning!</strong> You got ' + score + '/' + total + '. Re-read the lessons above and try the quiz again.';
+  }
+}
+</script>
+<script src="course.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>
