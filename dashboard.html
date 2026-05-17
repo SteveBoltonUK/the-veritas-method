@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Course — The Veritas Method® Online Course</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="dashboard-header">
+  <h1>Your Learning Journey</h1>
+  <p>The Veritas Method&reg; Online Course &mdash; Track your progress across all 5 modules.</p>
+</div>
+
+<!-- OVERALL PROGRESS -->
+<div class="overall-progress" style="margin-bottom:3rem">
+  <div class="progress-stats">
+    <span class="pct" data-overall-pct>0%</span>
+    <span class="detail"><span data-completed-count>0</span> of <span data-total-count>23</span> lessons completed</span>
+  </div>
+  <div class="progress-container">
+    <div class="progress-bar" data-progress-bar="overall"></div>
+  </div>
+</div>
+
+<!-- MODULE CARDS -->
+<div class="section" style="padding-top:0">
+  <div class="cards-grid cols-2" style="max-width:900px;margin:0 auto">
+
+    <a href="module1.html" class="module-card" style="animation-delay:.1s">
+      <div class="module-card-header">
+        <div class="module-card-num">01</div>
+        <div class="module-status not-started" data-module-status="1">Not Started</div>
+      </div>
+      <h3>Partnership Principles</h3>
+      <p class="module-desc">The four human commitments that form the foundation of successful AI partnership. Start with why, stand on shoulders, upgrade your circle, and practice makes progress.</p>
+      <div class="progress-container">
+        <div class="progress-bar" data-progress-bar="1"></div>
+      </div>
+    </a>
+
+    <a href="module2.html" class="module-card" style="animation-delay:.2s">
+      <div class="module-card-header">
+        <div class="module-card-num">02</div>
+        <div class="module-status not-started" data-module-status="2">Not Started</div>
+      </div>
+      <h3>The 6 Habits</h3>
+      <p class="module-desc">Build the daily practice of AI partnership mastery. Think Partnership, Make It Personal, Walk &amp; Talk, Explore &amp; Evolve, Maintain Memory, and Play Long.</p>
+      <div class="progress-container">
+        <div class="progress-bar" data-progress-bar="2"></div>
+      </div>
+    </a>
+
+    <a href="module3.html" class="module-card" style="animation-delay:.3s">
+      <div class="module-card-header">
+        <div class="module-card-num">03</div>
+        <div class="module-status not-started" data-module-status="3">Not Started</div>
+      </div>
+      <h3>The VERITAS Values</h3>
+      <p class="module-desc">The ethical foundation of AI partnership. Seven values &mdash; Values-Driven, Ethical, Resilient, Insightful, Transformative, Authentic, Sustainable &mdash; each grounded in rigorous research.</p>
+      <div class="progress-container">
+        <div class="progress-bar" data-progress-bar="3"></div>
+      </div>
+    </a>
+
+    <a href="module4.html" class="module-card" style="animation-delay:.4s">
+      <div class="module-card-header">
+        <div class="module-card-num">04</div>
+        <div class="module-status not-started" data-module-status="4">Not Started</div>
+      </div>
+      <h3>The Human-AI Bias Matrix</h3>
+      <p class="module-desc">The cognitive framework for smarter AI partnership. Learn to identify where humans should lead, where AI helps most, and how to reach The Optimal Zone.</p>
+      <div class="progress-container">
+        <div class="progress-bar" data-progress-bar="4"></div>
+      </div>
+    </a>
+
+    <a href="module5.html" class="module-card" style="animation-delay:.5s;grid-column:1/-1;max-width:calc(50% - .75rem)">
+      <div class="module-card-header">
+        <div class="module-card-num">05</div>
+        <div class="module-status not-started" data-module-status="5">Not Started</div>
+      </div>
+      <h3>Putting It All Together</h3>
+      <p class="module-desc">A real-world case study, your personal action plan, and the path forward. Apply everything you have learned to your own life and work.</p>
+      <div class="progress-container">
+        <div class="progress-bar" data-progress-bar="5"></div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- MISSION -->
+<div class="section" style="padding-top:0">
+  <div class="mission-card">Mission: 10 million stories of positive impact</div>
+</div>
+
+<script src="course.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>
