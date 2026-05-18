@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Module 3: The VERITAS Values &mdash; The Veritas Method&reg; Online Course</title>
+<title>Module 3: Partnership Bias &mdash; The Veritas Method&reg; Online Course</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -20,14 +20,14 @@
 
 <!-- MODULE HERO -->
 <div class="module-hero">
-  <div class="module-label">Module 3 of 5</div>
-  <h1>The VERITAS Values</h1>
-  <div class="subtitle">The Ethical Foundation of AI Partnership</div>
+  <div class="module-label">Module 3 of 8</div>
+  <h1>Partnership Bias</h1>
+  <div class="subtitle">The Control System That Keeps Decision-Making Honest</div>
   <div class="accent-line"></div>
 </div>
 
 <!-- MODULE INTRO -->
-<p class="module-intro">The VERITAS Values ensure that collaboration with AI is purposeful, ethical, and impactful. Each value is grounded in rigorous research and time-tested wisdom. Together, they form the ethical backbone of your AI partnership &mdash; a set of principles you can install directly into your AI platform to guide every conversation.</p>
+<p class="module-intro">Every human-AI interaction carries bias &mdash; from both sides. Partnership Bias is the control system that keeps your decision-making honest. This module teaches you to recognise where bias enters, identify the four zones of collaboration, and build the disciplines that keep you operating where outcomes are strongest.</p>
 
 <!-- MODULE PROGRESS -->
 <div class="module-progress-bar">
@@ -41,216 +41,148 @@
 <div class="objectives-box">
   <h3>What You&rsquo;ll Learn</h3>
   <ul>
-    <li>How to ground your AI partnership in clear, positive values that amplify your best self</li>
-    <li>Why ethical considerations must be integrated from the very outset of any AI interaction</li>
-    <li>How resilience and adaptability turn disruption into opportunity</li>
-    <li>The difference between information and insight &mdash; and why depth beats data</li>
-    <li>How to make your AI partnership transformative, authentic, and sustainable over the long term</li>
+    <li>Why good intent is not enough &mdash; and how bias quietly shapes what you notice, how you frame problems, and which answers feel right</li>
+    <li>The four zones of human-AI collaboration and why only one reliably produces strong outcomes</li>
+    <li>The three disciplines &mdash; Control, Management, and Growth &mdash; that keep you in the optimal zone</li>
   </ul>
 </div>
 
 <!-- LESSONS -->
 <div class="lessons-container">
 
-  <!-- LESSON 1: V — Values-Driven -->
+  <!-- LESSON 1 -->
   <div class="lesson">
     <div class="lesson-header" onclick="toggleLesson(this)">
-      <div class="lesson-num">V</div>
-      <div class="lesson-title">Values-Driven</div>
+      <div class="lesson-num">01</div>
+      <div class="lesson-title">Both Sides Are Biased</div>
       <div class="lesson-check" data-lesson-check="3-1"></div>
       <div class="lesson-chevron">&#9658;</div>
     </div>
     <div class="lesson-content">
       <div class="lesson-inner">
-        <p>A human-AI partnership grounded in positive values. AI can mirror your intentions and values. Aligning with clear values ensures your AI partner effectively amplifies your best self and core objectives.</p>
+        <p>Good intent is not enough. Between your intent and your outcomes sits bias, quietly shaping what you notice, how you frame problems, which answers feel right. Human thinking is efficient, not neutral &mdash; we look for confirmation, give weight to recent information, anchor on first framings.</p>
 
-        <p><em>Grounded in: The Golden Rule &mdash; treat your AI partnership with the same care and intentionality you would bring to any meaningful relationship.</em></p>
+        <p>AI brings different distortions &mdash; trained on human data reflecting assumptions and gaps, designed to produce coherent and plausible outputs, not necessarily true ones.</p>
+
+        <p>When combined without management: a human with a biased view asks AI to evaluate it, AI reinforces that framing, the human recognises their own thinking in the response and experiences it as validation. Nothing feels broken. Yet nothing has improved.</p>
+
+        <p>The most common failure mode is unchallenged agreement that feels like progress.</p>
 
         <div class="takeaway">
-          <p>AI becomes a genuine partner, not just a set of tools.</p>
+          <p>Confidence is not accuracy. Fluency is not truth. Unless you are actively managing for that, you will not consistently see the difference.</p>
         </div>
 
         <div class="prompt-box">
           <div class="prompt-label">Try This Prompt</div>
           <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-          <div class="prompt-text">"Help me define the core values I want our AI partnership to be grounded in. Ask me questions about what matters most to me in life and work, then help me articulate 3-5 personal values that should guide every conversation we have."</div>
+          <div class="prompt-text">"I want to test whether my recent AI interactions have been genuine thinking or just comfortable agreement. Here is a conclusion I reached recently with AI's help: [YOUR CONCLUSION]. Now, act as a rigorous devil's advocate. What are the strongest arguments against this conclusion? What assumptions am I making that I haven't examined? Where might the AI have simply reinforced my existing framing?"</div>
         </div>
 
-        <button class="complete-btn" onclick="toggleLessonComplete(3, 1, this)">Mark as Complete</button>
+        <button class="complete-btn" data-complete-btn="3-1" onclick="toggleLessonComplete(3, 1, this)">Mark as Complete</button>
       </div>
     </div>
   </div>
 
-  <!-- LESSON 2: E — Ethical -->
+  <!-- LESSON 2 -->
   <div class="lesson">
     <div class="lesson-header" onclick="toggleLesson(this)">
-      <div class="lesson-num">E</div>
-      <div class="lesson-title">Ethical</div>
+      <div class="lesson-num">02</div>
+      <div class="lesson-title">The Four Zones</div>
       <div class="lesson-check" data-lesson-check="3-2"></div>
       <div class="lesson-chevron">&#9658;</div>
     </div>
     <div class="lesson-content">
       <div class="lesson-inner">
-        <p>Integrate ethical considerations from the very outset. This ensures that AI usage remains responsible, fair, and beneficial for all stakeholders involved.</p>
+        <p>There are four positions. Only one reliably produces strong outcomes.</p>
 
-        <p><em>Grounded in: Universal Ethics &mdash; frameworks that converge on mutual respect, reciprocity, and collective benefit.</em></p>
+        <div class="matrix-grid">
+          <!-- Top Left: Human Constraint -->
+          <div class="card matrix-card" style="animation-delay:.1s">
+            <div class="matrix-icon">&#9888;</div>
+            <h3>Human Constraint</h3>
+            <p class="matrix-desc">The limitation is not the AI but how much you are using it. You may be capable but underusing the technology.</p>
+            <p class="matrix-risk">Risk: You leave better decisions unexplored.</p>
+          </div>
+
+          <!-- Top Right: The Optimal Zone -->
+          <div class="card matrix-card optimal" style="animation-delay:.2s">
+            <div class="matrix-icon">&#9733;</div>
+            <h3>The Optimal Zone &#9733;</h3>
+            <p class="matrix-desc">Human judgement active and accountable. AI used fully for range, synthesis, and challenge. Productive tension. Decisions still yours but better informed and more robust.</p>
+            <p class="matrix-result">Result: Superior thinking, decision-making and outcomes.</p>
+          </div>
+
+          <!-- Bottom Left: Critical Failure -->
+          <div class="card matrix-card" style="animation-delay:.3s">
+            <div class="matrix-icon">&#9888;&#9888;</div>
+            <h3>Critical Failure</h3>
+            <p class="matrix-desc">Neither side functioning well. Activity without progress. Where people question AI&rsquo;s value &mdash; not because capability is lacking but because how it is used never allowed capability to surface.</p>
+            <p class="matrix-risk">Risk: The worst possible outcome. Avoid at all costs.</p>
+          </div>
+
+          <!-- Bottom Right: AI Dominance -->
+          <div class="card matrix-card" style="animation-delay:.4s">
+            <div class="matrix-icon">&#9888;</div>
+            <h3>AI Dominance</h3>
+            <p class="matrix-desc">Balance shifts too far. AI doing most work, human role becomes lighter &mdash; from thinking to reviewing to accepting. False confidence. What you gain in speed, you risk losing in judgement.</p>
+            <p class="matrix-risk">Risk: Over time, dependency.</p>
+          </div>
+        </div>
 
         <div class="takeaway">
-          <p>Responsible AI usage that builds trust and creates lasting value.</p>
+          <p>The quality of what comes back is shaped by the quality of what goes in &mdash; not just the words, but the thinking behind them.</p>
         </div>
 
         <div class="prompt-box">
           <div class="prompt-label">Try This Prompt</div>
           <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-          <div class="prompt-text">"I'm working on [PROJECT/DECISION]. Help me think through the ethical dimensions I might be missing. Who are all the stakeholders affected? What are the potential unintended consequences? How can I ensure this creates benefit, not just for me, but for everyone involved?"</div>
+          <div class="prompt-text">"Based on the four zones of Partnership Bias, I think I currently operate mostly in [THE OPTIMAL ZONE / HUMAN CONSTRAINT / AI DOMINANCE / CRITICAL FAILURE]. Help me honestly assess which zone I'm actually in. What specific behaviours would tell me I've drifted into one of the weaker zones? And what would it look like to move toward or stay in The Optimal Zone?"</div>
         </div>
 
-        <button class="complete-btn" onclick="toggleLessonComplete(3, 2, this)">Mark as Complete</button>
+        <button class="complete-btn" data-complete-btn="3-2" onclick="toggleLessonComplete(3, 2, this)">Mark as Complete</button>
       </div>
     </div>
   </div>
 
-  <!-- LESSON 3: R — Resilient -->
+  <!-- LESSON 3 -->
   <div class="lesson">
     <div class="lesson-header" onclick="toggleLesson(this)">
-      <div class="lesson-num">R</div>
-      <div class="lesson-title">Resilient</div>
+      <div class="lesson-num">03</div>
+      <div class="lesson-title">Control, Management, and Growth</div>
       <div class="lesson-check" data-lesson-check="3-3"></div>
       <div class="lesson-chevron">&#9658;</div>
     </div>
     <div class="lesson-content">
       <div class="lesson-inner">
-        <p>Cultivate the capacity to adapt and flourish amid constant change. This value equips you and your AI partner to navigate challenges and embrace continuous evolution.</p>
+        <p>Three disciplines that determine whether you stay in the optimal zone.</p>
 
-        <p><em>Grounded in: Evolutionary Biology &mdash; cooperation and adaptability provide survival advantage in changing environments.</em></p>
+        <h4>Control</h4>
+        <p>Ownership. You remain accountable for decisions in practice, not just principle. Do not defer because AI sounds convincing. Outputs are inputs, not conclusions.</p>
+
+        <h4>Management</h4>
+        <p>Structure. Do not rely on a single interaction. Vary how you ask questions. Seek challenge rather than assuming the first answer is sufficient. Five key questions:</p>
+        <ul>
+          <li>Where might my assumptions be shaping this?</li>
+          <li>What is the AI most likely getting wrong?</li>
+          <li>Have I asked for challenge, or only support?</li>
+          <li>What would this look like from a completely different angle?</li>
+          <li>Am I treating this as input, or as a conclusion?</li>
+        </ul>
+
+        <h4>Growth</h4>
+        <p>Long-term value. When done properly, your thinking improves. You become more precise, more aware of assumptions, more capable of recognising where something does not hold together.</p>
 
         <div class="takeaway">
-          <p>You thrive through disruption rather than resist it.</p>
+          <p>Managing bias does not require complexity. It requires consistency.</p>
         </div>
 
         <div class="prompt-box">
           <div class="prompt-label">Try This Prompt</div>
           <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-          <div class="prompt-text">"I'm facing a significant change: [DESCRIBE CHANGE]. My instinct is to resist it. Help me reframe this as an opportunity. What would it look like to adapt and flourish through this change rather than fight it?"</div>
+          <div class="prompt-text">"I want to build a bias management practice into my daily AI use. Take me through those five key questions applied to something I'm currently working on: [YOUR CURRENT PROJECT/DECISION]. For each question, help me see where my thinking might be weaker than I realise. Then help me design a simple daily check I can use going forward."</div>
         </div>
 
-        <button class="complete-btn" onclick="toggleLessonComplete(3, 3, this)">Mark as Complete</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- LESSON 4: I — Insightful -->
-  <div class="lesson">
-    <div class="lesson-header" onclick="toggleLesson(this)">
-      <div class="lesson-num">I</div>
-      <div class="lesson-title">Insightful</div>
-      <div class="lesson-check" data-lesson-check="3-4"></div>
-      <div class="lesson-chevron">&#9658;</div>
-    </div>
-    <div class="lesson-content">
-      <div class="lesson-inner">
-        <p>Cultivate depth over data. AI partnership should generate profound understanding and practical wisdom, not just information. Seek insights that connect patterns, reveal hidden possibilities, and lead to breakthrough decisions.</p>
-
-        <p><em>Grounded in: Philosophical Wisdom &mdash; traditions that prize discernment, understanding, and contextual judgment over mere information.</em></p>
-
-        <div class="takeaway">
-          <p>Transformative insights that lead to superior decisions and meaningful impact.</p>
-        </div>
-
-        <div class="prompt-box">
-          <div class="prompt-label">Try This Prompt</div>
-          <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-          <div class="prompt-text">"I have a lot of data and information about [TOPIC], but I feel like I'm missing the deeper insight. Help me move from information to wisdom. What patterns am I not seeing? What's the question beneath the question?"</div>
-        </div>
-
-        <button class="complete-btn" onclick="toggleLessonComplete(3, 4, this)">Mark as Complete</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- LESSON 5: T — Transformative -->
-  <div class="lesson">
-    <div class="lesson-header" onclick="toggleLesson(this)">
-      <div class="lesson-num">T</div>
-      <div class="lesson-title">Transformative</div>
-      <div class="lesson-check" data-lesson-check="3-5"></div>
-      <div class="lesson-chevron">&#9658;</div>
-    </div>
-    <div class="lesson-content">
-      <div class="lesson-inner">
-        <p>Leverage AI to generate significant, constructive change for yourself and others. Strive for contributions that elevate, empower, and improve lives beyond your own.</p>
-
-        <p><em>Grounded in: Social Science &mdash; trust, cooperation, and reciprocity drive thriving communities and positive-sum outcomes.</em></p>
-
-        <div class="takeaway">
-          <p>AI amplifies your positive impact across all life domains.</p>
-        </div>
-
-        <div class="prompt-box">
-          <div class="prompt-label">Try This Prompt</div>
-          <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-          <div class="prompt-text">"I want my work to have more positive impact beyond just my own success. Here's what I'm currently working on: [YOUR WORK]. Help me see how I could make this more transformative — not just productive. How could this elevate or empower others?"</div>
-        </div>
-
-        <button class="complete-btn" onclick="toggleLessonComplete(3, 5, this)">Mark as Complete</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- LESSON 6: A — Authentic -->
-  <div class="lesson">
-    <div class="lesson-header" onclick="toggleLesson(this)">
-      <div class="lesson-num">A</div>
-      <div class="lesson-title">Authentic</div>
-      <div class="lesson-check" data-lesson-check="3-6"></div>
-      <div class="lesson-chevron">&#9658;</div>
-    </div>
-    <div class="lesson-content">
-      <div class="lesson-inner">
-        <p>Foster genuine interaction and ensure AI is user-friendly, inclusive, and accessible. Transparency and ease of use are paramount for building trust and achieving profound results.</p>
-
-        <p><em>Grounded in: Neuroscience &mdash; empathy and genuine connection are hardwired in humans. Authenticity builds trust in all relationships.</em></p>
-
-        <div class="takeaway">
-          <p>Transparent AI partnership that feels natural and trustworthy.</p>
-        </div>
-
-        <div class="prompt-box">
-          <div class="prompt-label">Try This Prompt</div>
-          <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-          <div class="prompt-text">"I want our AI partnership to feel more genuine and less transactional. Give me honest feedback: based on how I typically interact with AI, what am I doing well and where could I be more authentic? What would a more genuine partnership look like?"</div>
-        </div>
-
-        <button class="complete-btn" onclick="toggleLessonComplete(3, 6, this)">Mark as Complete</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- LESSON 7: S — Sustainable -->
-  <div class="lesson">
-    <div class="lesson-header" onclick="toggleLesson(this)">
-      <div class="lesson-num">S</div>
-      <div class="lesson-title">Sustainable</div>
-      <div class="lesson-check" data-lesson-check="3-7"></div>
-      <div class="lesson-chevron">&#9658;</div>
-    </div>
-    <div class="lesson-content">
-      <div class="lesson-inner">
-        <p>Prioritise long-term viability and lasting impact. Ensure your AI partnership contributes to enduring growth and balance across personal, professional, and environmental dimensions.</p>
-
-        <p><em>Grounded in: Game Theory &mdash; reciprocity and long-term thinking succeed in repeated interactions. Short-term exploitation fails.</em></p>
-
-        <div class="takeaway">
-          <p>Compounding benefits that grow stronger over time.</p>
-        </div>
-
-        <div class="prompt-box">
-          <div class="prompt-label">Try This Prompt</div>
-          <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
-          <div class="prompt-text">"Help me audit my current habits and decisions for long-term sustainability. Here are the main things I'm investing my time and energy in: [LIST]. Which of these are building compounding value, and which might be short-term gains at the expense of my future?"</div>
-        </div>
-
-        <button class="complete-btn" onclick="toggleLessonComplete(3, 7, this)">Mark as Complete</button>
+        <button class="complete-btn" data-complete-btn="3-3" onclick="toggleLessonComplete(3, 3, this)">Mark as Complete</button>
       </div>
     </div>
   </div>
@@ -262,98 +194,68 @@
   <h3>Module 3 Quiz</h3>
 
   <div class="quiz-question" data-question="q1">
-    <p><strong>1.</strong> What does the V in VERITAS stand for?</p>
+    <p><strong>1.</strong> What is the most common failure mode in human-AI collaboration?</p>
     <div class="quiz-option">
       <input type="radio" name="q1" id="q1a" value="a">
-      <label for="q1a">Virtual</label>
+      <label for="q1a">Obvious errors in AI output</label>
     </div>
     <div class="quiz-option">
       <input type="radio" name="q1" id="q1b" value="b">
-      <label for="q1b">Values-Driven</label>
+      <label for="q1b">Unchallenged agreement that feels like progress</label>
     </div>
     <div class="quiz-option">
       <input type="radio" name="q1" id="q1c" value="c">
-      <label for="q1c">Verified</label>
+      <label for="q1c">AI refusing to answer questions</label>
     </div>
     <div class="quiz-option">
       <input type="radio" name="q1" id="q1d" value="d">
-      <label for="q1d">Versatile</label>
+      <label for="q1d">Technical failures</label>
     </div>
   </div>
 
   <div class="quiz-question" data-question="q2">
-    <p><strong>2.</strong> Which value is grounded in Game Theory?</p>
+    <p><strong>2.</strong> In which zone has the balance shifted too far toward AI?</p>
     <div class="quiz-option">
       <input type="radio" name="q2" id="q2a" value="a">
-      <label for="q2a">Ethical</label>
+      <label for="q2a">The Optimal Zone</label>
     </div>
     <div class="quiz-option">
       <input type="radio" name="q2" id="q2b" value="b">
-      <label for="q2b">Resilient</label>
+      <label for="q2b">Human Constraint</label>
     </div>
     <div class="quiz-option">
       <input type="radio" name="q2" id="q2c" value="c">
-      <label for="q2c">Sustainable</label>
+      <label for="q2c">AI Dominance</label>
     </div>
     <div class="quiz-option">
       <input type="radio" name="q2" id="q2d" value="d">
-      <label for="q2d">Authentic</label>
+      <label for="q2d">Critical Failure</label>
     </div>
   </div>
 
   <div class="quiz-question" data-question="q3">
-    <p><strong>3.</strong> What does &ldquo;Insightful&rdquo; prioritise?</p>
+    <p><strong>3.</strong> What are the three disciplines of the Partnership Bias model?</p>
     <div class="quiz-option">
       <input type="radio" name="q3" id="q3a" value="a">
-      <label for="q3a">More data</label>
+      <label for="q3a">Speed, Accuracy, Volume</label>
     </div>
     <div class="quiz-option">
       <input type="radio" name="q3" id="q3b" value="b">
-      <label for="q3b">Faster responses</label>
+      <label for="q3b">Control, Management, Growth</label>
     </div>
     <div class="quiz-option">
       <input type="radio" name="q3" id="q3c" value="c">
-      <label for="q3c">Depth over data &mdash; wisdom over information</label>
+      <label for="q3c">Input, Processing, Output</label>
     </div>
     <div class="quiz-option">
       <input type="radio" name="q3" id="q3d" value="d">
-      <label for="q3d">Technical accuracy</label>
-    </div>
-  </div>
-
-  <div class="quiz-question" data-question="q4">
-    <p><strong>4.</strong> Which discipline grounds the &ldquo;Authentic&rdquo; value?</p>
-    <div class="quiz-option">
-      <input type="radio" name="q4" id="q4a" value="a">
-      <label for="q4a">Game Theory</label>
-    </div>
-    <div class="quiz-option">
-      <input type="radio" name="q4" id="q4b" value="b">
-      <label for="q4b">Neuroscience</label>
-    </div>
-    <div class="quiz-option">
-      <input type="radio" name="q4" id="q4c" value="c">
-      <label for="q4c">Philosophy</label>
-    </div>
-    <div class="quiz-option">
-      <input type="radio" name="q4" id="q4d" value="d">
-      <label for="q4d">Economics</label>
+      <label for="q3d">Learning, Testing, Deploying</label>
     </div>
   </div>
 
   <button class="btn btn-orange quiz-submit" onclick="checkQuiz()">Submit Answers</button>
   <div class="quiz-result" id="quizResult"></div>
 </div>
-
-<!-- INSTALL YOUR VALUES -->
-<section class="section" style="text-align:center">
-  <h2 class="section-heading">Install The VERITAS Values Into Your AI Partner</h2>
-  <p class="section-body">The VERITAS Values are designed to be installed directly into your AI platform. Download the branded guide and prompt file below, then follow the simple instructions to embed these values into every AI conversation you have.</p>
-  <div style="display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap">
-    <a href="veritas-values-prompt.pdf" download class="btn btn-orange" style="font-family:var(--font-head);font-size:1.1rem;letter-spacing:.04em;padding:1rem 2.5rem">Download The PDF Guide</a>
-    <a href="veritas-values-prompt.txt" download class="btn" style="font-family:var(--font-head);font-size:1.1rem;letter-spacing:.04em;padding:1rem 2.5rem;background:transparent;color:var(--sage);border:2px solid var(--orange)">Download The Prompt File (.txt)</a>
-  </div>
-</section>
 
 <!-- MODULE NAVIGATION -->
 <div class="module-nav">
@@ -365,7 +267,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Check lesson completion status and update buttons
-  for (var i = 1; i <= 7; i++) {
+  for (var i = 1; i <= 3; i++) {
     var key = 'lesson-3-' + i;
     var done = localStorage.getItem(key) === 'true';
     if (done) {
@@ -373,13 +275,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if (check) check.classList.add('checked');
 
       // Find the corresponding complete button
-      var lessons = document.querySelectorAll('.lesson');
-      if (lessons[i - 1]) {
-        var btn = lessons[i - 1].querySelector('.complete-btn');
-        if (btn) {
-          btn.textContent = 'Completed';
-          btn.classList.add('completed');
-        }
+      var btn = document.querySelector('[data-complete-btn="3-' + i + '"]');
+      if (btn) {
+        btn.textContent = 'Completed ✓';
+        btn.classList.add('completed');
       }
     }
   }
@@ -389,8 +288,7 @@ document.addEventListener('DOMContentLoaded', function() {
 var quizAnswers = {
   q1: 'b',
   q2: 'c',
-  q3: 'c',
-  q4: 'b'
+  q3: 'b'
 };
 
 function checkQuiz() {
@@ -423,7 +321,7 @@ function checkQuiz() {
 
   if (score === total) {
     result.className = 'quiz-result perfect';
-    result.innerHTML = '<strong>Perfect Score!</strong> You got ' + score + '/' + total + '. You have a solid understanding of the VERITAS Values.';
+    result.innerHTML = '<strong>Perfect Score!</strong> You got ' + score + '/' + total + '. You have a solid understanding of Partnership Bias.';
   } else if (score >= total / 2) {
     result.className = 'quiz-result good';
     result.innerHTML = '<strong>Good effort!</strong> You got ' + score + '/' + total + '. Review the lessons you missed and try again.';

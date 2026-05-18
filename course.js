@@ -3,11 +3,14 @@ const Course = (function() {
   const STORAGE_KEY = 'veritas_course_progress';
 
   const COURSE_STRUCTURE = {
-    1: { title: 'Partnership Principles', lessons: 4 },
-    2: { title: 'The 6 Habits', lessons: 6 },
-    3: { title: 'The VERITAS Values', lessons: 7 },
-    4: { title: 'The Human-AI Bias Matrix', lessons: 3 },
-    5: { title: 'Putting It All Together', lessons: 3 }
+    1: { title: 'The Intelligence Gap', lessons: 3 },
+    2: { title: 'Partnership Standards', lessons: 3 },
+    3: { title: 'Partnership Bias', lessons: 3 },
+    4: { title: 'Partnership Principles', lessons: 4 },
+    5: { title: 'Partnership Habits', lessons: 6 },
+    6: { title: 'The VERITAS Values', lessons: 7 },
+    7: { title: 'Case Studies & Measurement', lessons: 3 },
+    8: { title: 'Begin Your Practice', lessons: 3 }
   };
 
   function getProgress() {

@@ -3,11 +3,14 @@
   const pages=[
     {href:'index.html',label:'Home'},
     {href:'dashboard.html',label:'My Course'},
-    {href:'module1.html',label:'Principles'},
-    {href:'module2.html',label:'6 Habits'},
-    {href:'module3.html',label:'Values'},
-    {href:'module4.html',label:'Bias Matrix'},
-    {href:'module5.html',label:'Practice'}
+    {href:'module1.html',label:'Intelligence Gap'},
+    {href:'module2.html',label:'Standards'},
+    {href:'module3.html',label:'Bias'},
+    {href:'module4.html',label:'Principles'},
+    {href:'module5.html',label:'Habits'},
+    {href:'module6.html',label:'Values'},
+    {href:'module7.html',label:'Case Studies'},
+    {href:'module8.html',label:'Begin'}
   ];
 
   const current=location.pathname.split('/').pop()||'index.html';
