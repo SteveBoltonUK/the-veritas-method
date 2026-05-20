@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Module 3: Partnership Bias &mdash; The Veritas Method&reg; Online Course</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <a href="dashboard.html">Course Dashboard</a>
+  <span>&rsaquo;</span>
+  Module 3
+</div>
+
+<!-- MODULE HERO -->
+<div class="module-hero">
+  <div class="module-label">Module 3 of 8</div>
+  <h1>Partnership Bias</h1>
+  <div class="subtitle">The Control System That Keeps Decision-Making Honest</div>
+  <div class="accent-line"></div>
+</div>
+
+<!-- MODULE INTRO -->
+<p class="module-intro">Every human-AI interaction carries bias &mdash; from both sides. Partnership Bias is the control system that keeps your decision-making honest. This module teaches you to recognise where bias enters, identify the four zones of collaboration, and build the disciplines that keep you operating where outcomes are strongest.</p>
+
+<!-- MODULE PROGRESS -->
+<div class="module-progress-bar">
+  <div class="progress-container">
+    <div class="progress-bar" data-progress-bar="3"></div>
+  </div>
+  <div class="progress-label">Module Progress</div>
+</div>
+
+<!-- LEARNING OBJECTIVES -->
+<div class="objectives-box">
+  <h3>What You&rsquo;ll Learn</h3>
+  <ul>
+    <li>Why good intent is not enough &mdash; and how bias quietly shapes what you notice, how you frame problems, and which answers feel right</li>
+    <li>The four zones of human-AI collaboration and why only one reliably produces strong outcomes</li>
+    <li>The three disciplines &mdash; Control, Management, and Growth &mdash; that keep you in the optimal zone</li>
+  </ul>
+</div>
+
+<!-- LESSONS -->
+<div class="lessons-container">
+
+  <!-- LESSON 1 -->
+  <div class="lesson">
+    <div class="lesson-header" onclick="toggleLesson(this)">
+      <div class="lesson-num">01</div>
+      <div class="lesson-title">Both Sides Are Biased</div>
+      <div class="lesson-check" data-lesson-check="3-1"></div>
+      <div class="lesson-chevron">&#9658;</div>
+    </div>
+    <div class="lesson-content">
+      <div class="lesson-inner">
+        <p>Good intent is not enough. Between your intent and your outcomes sits bias, quietly shaping what you notice, how you frame problems, which answers feel right. Human thinking is efficient, not neutral &mdash; we look for confirmation, give weight to recent information, anchor on first framings.</p>
+
+        <p>AI brings different distortions &mdash; trained on human data reflecting assumptions and gaps, designed to produce coherent and plausible outputs, not necessarily true ones.</p>
+
+        <p>When combined without management: a human with a biased view asks AI to evaluate it, AI reinforces that framing, the human recognises their own thinking in the response and experiences it as validation. Nothing feels broken. Yet nothing has improved.</p>
+
+        <p>The most common failure mode is unchallenged agreement that feels like progress.</p>
+
+        <div class="takeaway">
+          <p>Confidence is not accuracy. Fluency is not truth. Unless you are actively managing for that, you will not consistently see the difference.</p>
+        </div>
+
+        <div class="prompt-box">
+          <div class="prompt-label">Try This Prompt</div>
+          <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+          <div class="prompt-text">"I want to test whether my recent AI interactions have been genuine thinking or just comfortable agreement. Here is a conclusion I reached recently with AI's help: [YOUR CONCLUSION]. Now, act as a rigorous devil's advocate. What are the strongest arguments against this conclusion? What assumptions am I making that I haven't examined? Where might the AI have simply reinforced my existing framing?"</div>
+        </div>
+
+        <button class="complete-btn" data-complete-btn="3-1" onclick="toggleLessonComplete(3, 1, this)">Mark as Complete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 2 -->
+  <div class="lesson">
+    <div class="lesson-header" onclick="toggleLesson(this)">
+      <div class="lesson-num">02</div>
+      <div class="lesson-title">The Four Zones</div>
+      <div class="lesson-check" data-lesson-check="3-2"></div>
+      <div class="lesson-chevron">&#9658;</div>
+    </div>
+    <div class="lesson-content">
+      <div class="lesson-inner">
+        <p>There are four positions. Only one reliably produces strong outcomes.</p>
+
+        <div class="matrix-grid">
+          <!-- Top Left: Human Constraint -->
+          <div class="card matrix-card" style="animation-delay:.1s">
+            <div class="matrix-icon">&#9888;</div>
+            <h3>Human Constraint</h3>
+            <p class="matrix-desc">The limitation is not the AI but how much you are using it. You may be capable but underusing the technology.</p>
+            <p class="matrix-risk">Risk: You leave better decisions unexplored.</p>
+          </div>
+
+          <!-- Top Right: The Optimal Zone -->
+          <div class="card matrix-card optimal" style="animation-delay:.2s">
+            <div class="matrix-icon">&#9733;</div>
+            <h3>The Optimal Zone &#9733;</h3>
+            <p class="matrix-desc">Human judgement active and accountable. AI used fully for range, synthesis, and challenge. Productive tension. Decisions still yours but better informed and more robust.</p>
+            <p class="matrix-result">Result: Superior thinking, decision-making and outcomes.</p>
+          </div>
+
+          <!-- Bottom Left: Critical Failure -->
+          <div class="card matrix-card" style="animation-delay:.3s">
+            <div class="matrix-icon">&#9888;&#9888;</div>
+            <h3>Critical Failure</h3>
+            <p class="matrix-desc">Neither side functioning well. Activity without progress. Where people question AI&rsquo;s value &mdash; not because capability is lacking but because how it is used never allowed capability to surface.</p>
+            <p class="matrix-risk">Risk: The worst possible outcome. Avoid at all costs.</p>
+          </div>
+
+          <!-- Bottom Right: AI Dominance -->
+          <div class="card matrix-card" style="animation-delay:.4s">
+            <div class="matrix-icon">&#9888;</div>
+            <h3>AI Dominance</h3>
+            <p class="matrix-desc">Balance shifts too far. AI doing most work, human role becomes lighter &mdash; from thinking to reviewing to accepting. False confidence. What you gain in speed, you risk losing in judgement.</p>
+            <p class="matrix-risk">Risk: Over time, dependency.</p>
+          </div>
+        </div>
+
+        <div class="takeaway">
+          <p>The quality of what comes back is shaped by the quality of what goes in &mdash; not just the words, but the thinking behind them.</p>
+        </div>
+
+        <div class="prompt-box">
+          <div class="prompt-label">Try This Prompt</div>
+          <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+          <div class="prompt-text">"Based on the four zones of Partnership Bias, I think I currently operate mostly in [THE OPTIMAL ZONE / HUMAN CONSTRAINT / AI DOMINANCE / CRITICAL FAILURE]. Help me honestly assess which zone I'm actually in. What specific behaviours would tell me I've drifted into one of the weaker zones? And what would it look like to move toward or stay in The Optimal Zone?"</div>
+        </div>
+
+        <button class="complete-btn" data-complete-btn="3-2" onclick="toggleLessonComplete(3, 2, this)">Mark as Complete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LESSON 3 -->
+  <div class="lesson">
+    <div class="lesson-header" onclick="toggleLesson(this)">
+      <div class="lesson-num">03</div>
+      <div class="lesson-title">Control, Management, and Growth</div>
+      <div class="lesson-check" data-lesson-check="3-3"></div>
+      <div class="lesson-chevron">&#9658;</div>
+    </div>
+    <div class="lesson-content">
+      <div class="lesson-inner">
+        <p>Three disciplines that determine whether you stay in the optimal zone.</p>
+
+        <h4>Control</h4>
+        <p>Ownership. You remain accountable for decisions in practice, not just principle. Do not defer because AI sounds convincing. Outputs are inputs, not conclusions.</p>
+
+        <h4>Management</h4>
+        <p>Structure. Do not rely on a single interaction. Vary how you ask questions. Seek challenge rather than assuming the first answer is sufficient. Five key questions:</p>
+        <ul>
+          <li>Where might my assumptions be shaping this?</li>
+          <li>What is the AI most likely getting wrong?</li>
+          <li>Have I asked for challenge, or only support?</li>
+          <li>What would this look like from a completely different angle?</li>
+          <li>Am I treating this as input, or as a conclusion?</li>
+        </ul>
+
+        <h4>Growth</h4>
+        <p>Long-term value. When done properly, your thinking improves. You become more precise, more aware of assumptions, more capable of recognising where something does not hold together.</p>
+
+        <div class="takeaway">
+          <p>Managing bias does not require complexity. It requires consistency.</p>
+        </div>
+
+        <div class="prompt-box">
+          <div class="prompt-label">Try This Prompt</div>
+          <button class="copy-btn" onclick="copyPrompt(this)">Copy</button>
+          <div class="prompt-text">"I want to build a bias management practice into my daily AI use. Take me through those five key questions applied to something I'm currently working on: [YOUR CURRENT PROJECT/DECISION]. For each question, help me see where my thinking might be weaker than I realise. Then help me design a simple daily check I can use going forward."</div>
+        </div>
+
+        <button class="complete-btn" data-complete-btn="3-3" onclick="toggleLessonComplete(3, 3, this)">Mark as Complete</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- QUIZ -->
+<div class="quiz-section">
+  <h3>Module 3 Quiz</h3>
+
+  <div class="quiz-question" data-question="q1">
+    <p><strong>1.</strong> What is the most common failure mode in human-AI collaboration?</p>
+    <div class="quiz-option">
+      <input type="radio" name="q1" id="q1a" value="a">
+      <label for="q1a">Obvious errors in AI output</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q1" id="q1b" value="b">
+      <label for="q1b">Unchallenged agreement that feels like progress</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q1" id="q1c" value="c">
+      <label for="q1c">AI refusing to answer questions</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q1" id="q1d" value="d">
+      <label for="q1d">Technical failures</label>
+    </div>
+  </div>
+
+  <div class="quiz-question" data-question="q2">
+    <p><strong>2.</strong> In which zone has the balance shifted too far toward AI?</p>
+    <div class="quiz-option">
+      <input type="radio" name="q2" id="q2a" value="a">
+      <label for="q2a">The Optimal Zone</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q2" id="q2b" value="b">
+      <label for="q2b">Human Constraint</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q2" id="q2c" value="c">
+      <label for="q2c">AI Dominance</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q2" id="q2d" value="d">
+      <label for="q2d">Critical Failure</label>
+    </div>
+  </div>
+
+  <div class="quiz-question" data-question="q3">
+    <p><strong>3.</strong> What are the three disciplines of the Partnership Bias model?</p>
+    <div class="quiz-option">
+      <input type="radio" name="q3" id="q3a" value="a">
+      <label for="q3a">Speed, Accuracy, Volume</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q3" id="q3b" value="b">
+      <label for="q3b">Control, Management, Growth</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q3" id="q3c" value="c">
+      <label for="q3c">Input, Processing, Output</label>
+    </div>
+    <div class="quiz-option">
+      <input type="radio" name="q3" id="q3d" value="d">
+      <label for="q3d">Learning, Testing, Deploying</label>
+    </div>
+  </div>
+
+  <button class="btn btn-orange quiz-submit" onclick="checkQuiz()">Submit Answers</button>
+  <div class="quiz-result" id="quizResult"></div>
+</div>
+
+<!-- MODULE NAVIGATION -->
+<div class="module-nav">
+  <a href="module2.html">&larr; Module 2</a>
+  <a href="module4.html">Module 4 &rarr;</a>
+</div>
+
+<!-- SCRIPTS -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Check lesson completion status and update buttons
+  for (var i = 1; i <= 3; i++) {
+    var key = 'lesson-3-' + i;
+    var done = localStorage.getItem(key) === 'true';
+    if (done) {
+      var check = document.querySelector('[data-lesson-check="3-' + i + '"]');
+      if (check) check.classList.add('checked');
+
+      // Find the corresponding complete button
+      var btn = document.querySelector('[data-complete-btn="3-' + i + '"]');
+      if (btn) {
+        btn.textContent = 'Completed ✓';
+        btn.classList.add('completed');
+      }
+    }
+  }
+});
+
+// Quiz answers
+var quizAnswers = {
+  q1: 'b',
+  q2: 'c',
+  q3: 'b'
+};
+
+function checkQuiz() {
+  var score = 0;
+  var total = Object.keys(quizAnswers).length;
+
+  // Clear previous highlights
+  document.querySelectorAll('.quiz-option').forEach(function(opt) {
+    opt.classList.remove('correct', 'incorrect');
+  });
+
+  for (var q in quizAnswers) {
+    var selected = document.querySelector('input[name="' + q + '"]:checked');
+    if (selected) {
+      var option = selected.closest('.quiz-option');
+      if (selected.value === quizAnswers[q]) {
+        score++;
+        option.classList.add('correct');
+      } else {
+        option.classList.add('incorrect');
+        // Highlight correct answer
+        var correctInput = document.querySelector('input[name="' + q + '"][value="' + quizAnswers[q] + '"]');
+        if (correctInput) correctInput.closest('.quiz-option').classList.add('correct');
+      }
+    }
+  }
+
+  var result = document.getElementById('quizResult');
+  result.style.display = 'block';
+
+  if (score === total) {
+    result.className = 'quiz-result perfect';
+    result.innerHTML = '<strong>Perfect Score!</strong> You got ' + score + '/' + total + '. You have a solid understanding of Partnership Bias.';
+  } else if (score >= total / 2) {
+    result.className = 'quiz-result good';
+    result.innerHTML = '<strong>Good effort!</strong> You got ' + score + '/' + total + '. Review the lessons you missed and try again.';
+  } else {
+    result.className = 'quiz-result retry';
+    result.innerHTML = '<strong>Keep learning!</strong> You got ' + score + '/' + total + '. Re-read the lessons above and try the quiz again.';
+  }
+}
+</script>
+<script src="course.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>

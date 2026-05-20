@@ -5,6 +5,8 @@
   --carbon:#1d2122;
   --graphite:#393e41;
   --sage:#d3cda1;
+  --success:#5a9e6f;
+  --info:#5b8fb9;
   --font-head:'Bebas Neue',sans-serif;
   --font-body:'Inter',sans-serif;
 }
@@ -45,7 +47,7 @@ img{max-width:100%;display:block}
 /* ===== IMAGE HERO (Home) ===== */
 .image-hero{position:relative;min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
 .image-hero .hero-bg{position:absolute;inset:0;background-size:cover;background-position:center}
-.image-hero .hero-overlay{position:absolute;inset:0;background:rgba(29,33,34,.6)}
+.image-hero .hero-overlay{position:absolute;inset:0;background:rgba(29,33,34,.7)}
 .image-hero .hero-content{position:relative;z-index:1;padding:2rem 1.5rem;max-width:800px}
 .image-hero .hero-content h1{font-family:var(--font-head);color:#fff;font-size:clamp(3rem,9vw,5.5rem);letter-spacing:.06em;line-height:1}
 .image-hero .hero-content .hero-subtitle{font-family:var(--font-body);color:var(--sage);font-size:clamp(1rem,2.5vw,1.25rem);font-weight:300;margin-top:.75rem}
@@ -62,6 +64,9 @@ img{max-width:100%;display:block}
 .btn-white:hover{background:transparent;color:#fff}
 .btn-dark{background:var(--carbon);color:var(--sage);border-color:var(--carbon)}
 .btn-dark:hover{background:transparent;color:var(--carbon)}
+.btn-success{background:var(--success);color:#fff;border-color:var(--success)}
+.btn-success:hover{background:transparent;color:var(--success)}
+.btn-lg{font-size:1.1rem;padding:1rem 3rem;font-family:var(--font-head);letter-spacing:.04em}
 
 /* ===== SECTIONS ===== */
 .section{padding:4rem 1.5rem;max-width:1100px;margin:0 auto}
@@ -132,12 +137,6 @@ img{max-width:100%;display:block}
 .expand-toggle:hover{background:var(--orange);color:var(--carbon)}
 .expand-toggle .arrow{display:inline-block;transition:transform .3s;font-size:.7rem}
 .expand-toggle.open .arrow{transform:rotate(90deg)}
-.prompt-box{max-height:0;overflow:hidden;transition:max-height .45s ease,opacity .35s;opacity:0}
-.prompt-box.open{opacity:1}
-.prompt-inner{background:rgba(29,33,34,.7);border-radius:8px;padding:1.25rem 1.5rem;margin-top:1rem;position:relative}
-.prompt-inner p{font-size:.9rem;font-weight:300;line-height:1.75;white-space:pre-wrap}
-.copy-btn{position:absolute;top:.75rem;right:.75rem;background:none;border:1px solid var(--sage);color:var(--sage);font-family:var(--font-body);font-size:.75rem;padding:.3rem .7rem;border-radius:4px;cursor:pointer;transition:background .25s,color .25s}
-.copy-btn:hover{background:var(--sage);color:var(--carbon)}
 
 /* ===== MATRIX ===== */
 .matrix-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
@@ -193,3 +192,166 @@ img{max-width:100%;display:block}
 .mt-2{margin-top:2rem}
 .mb-1{margin-bottom:1rem}
 .mb-2{margin-bottom:2rem}
+
+
+/* ================================================================
+   COURSE-SPECIFIC STYLES
+   ================================================================ */
+
+/* ===== COURSE HERO (Landing Page) ===== */
+.course-hero{position:relative;min-height:85vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;background:linear-gradient(135deg,var(--carbon) 0%,var(--graphite) 50%,var(--carbon) 100%)}
+.course-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(206,127,72,.08) 0%,transparent 70%)}
+.course-hero-content{position:relative;z-index:1;padding:2rem 1.5rem;max-width:850px}
+.course-hero-badge{display:inline-block;font-family:var(--font-body);font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.12em;color:var(--orange);border:1px solid var(--orange);padding:.4rem 1.2rem;border-radius:20px;margin-bottom:1.5rem}
+.course-hero-content h1{font-family:var(--font-head);color:#fff;font-size:clamp(2.5rem,8vw,5rem);letter-spacing:.06em;line-height:1;margin-bottom:.5rem}
+.course-hero-content .hero-method{font-family:var(--font-head);color:var(--orange);font-size:clamp(1.2rem,3.5vw,2rem);letter-spacing:.08em}
+.course-hero-content .hero-desc{font-weight:300;font-size:clamp(1rem,2vw,1.15rem);max-width:600px;margin:1.5rem auto 0;line-height:1.8;opacity:.9}
+.course-hero-stats{display:flex;gap:2.5rem;justify-content:center;margin-top:2.5rem;flex-wrap:wrap}
+.course-hero-stat{text-align:center}
+.course-hero-stat .num{font-family:var(--font-head);font-size:2rem;color:var(--orange);display:block}
+.course-hero-stat .label{font-size:.8rem;font-weight:400;opacity:.7}
+
+/* ===== COURSE CURRICULUM PREVIEW ===== */
+.curriculum-item{display:flex;align-items:center;gap:1.25rem;padding:1.25rem 1.5rem;background:var(--graphite);border-radius:10px;margin-bottom:.75rem;transition:border-color .3s,transform .2s;border-left:3px solid transparent;opacity:0;animation:cardFadeIn .5s ease forwards}
+.curriculum-item:hover{border-left-color:var(--orange);transform:translateX(4px)}
+.curriculum-item:nth-child(1){animation-delay:.1s}
+.curriculum-item:nth-child(2){animation-delay:.15s}
+.curriculum-item:nth-child(3){animation-delay:.2s}
+.curriculum-item:nth-child(4){animation-delay:.25s}
+.curriculum-item:nth-child(5){animation-delay:.3s}
+.curriculum-num{font-family:var(--font-head);font-size:2rem;color:var(--orange);min-width:40px}
+.curriculum-info h3{font-family:var(--font-head);font-size:1.2rem;color:var(--sage);letter-spacing:.03em;margin-bottom:.15rem}
+.curriculum-info p{font-size:.85rem;font-weight:300;opacity:.8;margin:0}
+.curriculum-meta{margin-left:auto;font-size:.75rem;font-weight:500;color:var(--orange);opacity:.7;white-space:nowrap}
+
+/* ===== DASHBOARD ===== */
+.dashboard-header{text-align:center;padding:3rem 1.5rem 1rem;max-width:900px;margin:0 auto}
+.dashboard-header h1{font-family:var(--font-head);color:var(--orange);font-size:clamp(2rem,5vw,3rem);letter-spacing:.06em}
+.dashboard-header p{font-weight:300;opacity:.8;margin-top:.5rem}
+
+.overall-progress{max-width:900px;margin:0 auto;padding:0 1.5rem}
+.progress-stats{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:.5rem}
+.progress-stats .pct{font-family:var(--font-head);font-size:2rem;color:var(--orange)}
+.progress-stats .detail{font-size:.85rem;font-weight:300;opacity:.7}
+
+.progress-container{background:var(--graphite);border-radius:8px;height:12px;overflow:hidden;position:relative}
+.progress-bar{height:100%;background:linear-gradient(90deg,var(--orange),#e8a46e);border-radius:8px;transition:width .6s ease;width:0}
+.progress-label{font-size:.75rem;font-weight:400;opacity:.6;margin-top:.35rem}
+
+/* ===== MODULE CARDS (Dashboard) ===== */
+.module-card{background:var(--graphite);border-radius:12px;padding:2rem;display:flex;flex-direction:column;gap:1rem;border-left:3px solid transparent;transition:all .35s;opacity:0;animation:cardFadeIn .6s ease forwards;cursor:pointer;text-decoration:none;color:var(--sage)}
+.module-card:hover{border-left-color:var(--orange);transform:translateY(-4px);box-shadow:0 8px 30px rgba(206,127,72,.2)}
+.module-card-header{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem}
+.module-card-num{font-family:var(--font-head);font-size:2.5rem;color:var(--orange);line-height:1}
+.module-status{font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;padding:.3rem .8rem;border-radius:12px;white-space:nowrap}
+.module-status.not-started{background:rgba(211,205,161,.1);color:var(--sage);opacity:.5}
+.module-status.in-progress{background:rgba(206,127,72,.15);color:var(--orange)}
+.module-status.completed{background:rgba(90,158,111,.15);color:var(--success)}
+.module-card h3{font-family:var(--font-head);font-size:1.4rem;letter-spacing:.04em;color:var(--sage)}
+.module-card .module-desc{font-weight:300;font-size:.9rem;opacity:.8;flex:1}
+.module-card .progress-container{height:6px;margin-top:auto}
+.module-card .progress-bar{height:100%}
+
+/* ===== MODULE PAGE ===== */
+.module-hero{text-align:center;padding:3rem 1.5rem 2rem;max-width:800px;margin:0 auto}
+.module-hero .module-label{font-family:var(--font-body);font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--orange);opacity:.8}
+.module-hero h1{font-family:var(--font-head);color:var(--orange);font-size:clamp(2rem,6vw,3.5rem);letter-spacing:.06em;line-height:1;margin-top:.25rem}
+.module-hero .subtitle{font-family:var(--font-head);color:var(--sage);font-size:clamp(1rem,3vw,1.5rem);letter-spacing:.06em;margin-top:.25rem}
+.module-hero .accent-line{width:60px;height:3px;background:var(--orange);margin:1.25rem auto 0}
+
+.module-intro{max-width:760px;margin:0 auto 2rem;padding:0 1.5rem;font-size:1rem;font-weight:300;text-align:center;line-height:1.8;opacity:.9}
+
+.module-progress-bar{max-width:760px;margin:0 auto 3rem;padding:0 1.5rem}
+
+/* ===== LEARNING OBJECTIVES ===== */
+.objectives-box{max-width:760px;margin:0 auto 3rem;padding:1.75rem 2rem;background:var(--graphite);border-radius:12px;border-left:4px solid var(--orange)}
+.objectives-box h3{font-family:var(--font-head);font-size:1.3rem;color:var(--orange);letter-spacing:.04em;margin-bottom:.75rem}
+.objectives-box ul{list-style:none;padding:0;margin:0}
+.objectives-box li{position:relative;padding-left:1.5rem;font-weight:300;font-size:.93rem;margin-bottom:.4rem;line-height:1.6}
+.objectives-box li::before{content:'✦';position:absolute;left:0;color:var(--orange);font-size:.7rem;top:.35em}
+
+/* ===== LESSONS ===== */
+.lessons-container{max-width:800px;margin:0 auto;padding:0 1.5rem}
+
+.lesson{background:var(--graphite);border-radius:12px;margin-bottom:1rem;overflow:hidden;border:1px solid rgba(206,127,72,.08);transition:border-color .3s}
+.lesson:hover{border-color:rgba(206,127,72,.2)}
+.lesson.open{border-color:var(--orange)}
+
+.lesson-header{display:flex;align-items:center;gap:1rem;padding:1.25rem 1.5rem;cursor:pointer;user-select:none;transition:background .2s}
+.lesson-header:hover{background:rgba(206,127,72,.05)}
+.lesson-num{font-family:var(--font-head);font-size:1.8rem;color:var(--orange);min-width:36px;line-height:1}
+.lesson-title{font-family:var(--font-head);font-size:1.2rem;letter-spacing:.03em;color:var(--sage);flex:1}
+.lesson-check{width:24px;height:24px;border-radius:50%;border:2px solid rgba(211,205,161,.3);display:flex;align-items:center;justify-content:center;font-size:.75rem;transition:all .3s;flex-shrink:0}
+.lesson-check.checked{background:var(--success);border-color:var(--success);color:#fff}
+.lesson-check.checked::after{content:'✓'}
+.lesson-chevron{color:var(--sage);opacity:.4;transition:transform .3s;font-size:.8rem}
+.lesson.open .lesson-chevron{transform:rotate(90deg);opacity:.8}
+
+.lesson-content{max-height:0;overflow:hidden;transition:max-height .5s ease}
+.lesson.open .lesson-content{max-height:3000px}
+.lesson-inner{padding:0 1.5rem 2rem;border-top:1px solid rgba(206,127,72,.1)}
+.lesson-inner p{font-weight:300;font-size:.95rem;margin:1rem 0;line-height:1.8}
+.lesson-inner h4{font-family:var(--font-head);font-size:1.1rem;color:var(--orange);letter-spacing:.03em;margin:1.5rem 0 .5rem}
+.lesson-inner ul{list-style:none;padding:0}
+.lesson-inner li{position:relative;padding-left:1.25rem;font-weight:300;font-size:.93rem;margin-bottom:.4rem;line-height:1.6}
+.lesson-inner li::before{content:'';position:absolute;left:0;top:.6em;width:6px;height:6px;border-radius:50%;background:var(--orange)}
+
+/* ===== PROMPT BOX (in lessons) ===== */
+.prompt-box{background:rgba(29,33,34,.7);border-radius:10px;padding:1.25rem 1.5rem;margin:1rem 0;position:relative;border:1px solid rgba(206,127,72,.15)}
+.prompt-box .prompt-label{font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--orange);margin-bottom:.5rem}
+.prompt-box .prompt-text{font-size:.9rem;font-weight:300;line-height:1.75;white-space:pre-wrap}
+.prompt-box .copy-btn{position:absolute;top:.75rem;right:.75rem;background:none;border:1px solid var(--sage);color:var(--sage);font-family:var(--font-body);font-size:.75rem;padding:.3rem .7rem;border-radius:4px;cursor:pointer;transition:background .25s,color .25s}
+.prompt-box .copy-btn:hover{background:var(--sage);color:var(--carbon)}
+
+/* ===== COMPLETE LESSON BUTTON ===== */
+.complete-btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-body);font-weight:500;font-size:.9rem;padding:.7rem 1.5rem;border-radius:6px;cursor:pointer;transition:all .3s;border:2px solid var(--orange);background:var(--orange);color:var(--carbon);margin-top:1rem}
+.complete-btn:hover{background:transparent;color:var(--orange)}
+.complete-btn.completed{background:var(--success);border-color:var(--success);color:#fff}
+.complete-btn.completed:hover{background:transparent;color:var(--success)}
+
+/* ===== QUIZ ===== */
+.quiz-section{max-width:760px;margin:2rem auto;padding:2rem;background:var(--graphite);border-radius:12px;border-top:3px solid var(--orange)}
+.quiz-section h3{font-family:var(--font-head);font-size:1.5rem;color:var(--orange);letter-spacing:.04em;margin-bottom:1.5rem;text-align:center}
+.quiz-question{margin-bottom:1.75rem}
+.quiz-question p{font-weight:400;font-size:.95rem;margin-bottom:.75rem}
+.quiz-option{display:flex;align-items:center;gap:.75rem;padding:.6rem 1rem;margin-bottom:.4rem;border-radius:8px;cursor:pointer;transition:background .2s;border:1px solid transparent}
+.quiz-option:hover{background:rgba(206,127,72,.08)}
+.quiz-option input[type="radio"]{accent-color:var(--orange);width:16px;height:16px;cursor:pointer}
+.quiz-option label{font-weight:300;font-size:.9rem;cursor:pointer;flex:1}
+.quiz-option.correct{background:rgba(90,158,111,.15);border-color:var(--success)}
+.quiz-option.incorrect{background:rgba(217,83,79,.12);border-color:#d9534f}
+.quiz-submit{display:block;margin:1.5rem auto 0;padding:.75rem 2.5rem}
+.quiz-result{display:none;margin-top:1.25rem;padding:1.25rem 1.5rem;border-radius:8px;font-size:.93rem;text-align:center}
+.quiz-result.perfect{background:rgba(90,158,111,.15);border:1px solid var(--success);color:var(--success)}
+.quiz-result.good{background:rgba(91,143,185,.15);border:1px solid var(--info);color:var(--info)}
+.quiz-result.retry{background:rgba(217,83,79,.12);border:1px solid #d9534f;color:#d9534f}
+
+/* ===== MODULE NAVIGATION ===== */
+.module-nav{max-width:800px;margin:3rem auto;padding:0 1.5rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.module-nav a{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-body);font-weight:500;font-size:.9rem;color:var(--orange);padding:.75rem 1.5rem;border:1px solid var(--orange);border-radius:6px;transition:all .3s}
+.module-nav a:hover{background:var(--orange);color:var(--carbon)}
+
+/* ===== COURSE COMPLETION ===== */
+.completion-section{text-align:center;padding:4rem 1.5rem;max-width:700px;margin:0 auto}
+.completion-badge{width:120px;height:120px;border-radius:50%;border:3px solid var(--orange);display:flex;align-items:center;justify-content:center;margin:0 auto 2rem;font-size:3rem;background:rgba(206,127,72,.1);animation:badgePulse 2s ease-in-out infinite}
+.completion-section h2{font-family:var(--font-head);color:var(--orange);font-size:clamp(1.8rem,5vw,2.5rem);letter-spacing:.05em;margin-bottom:.75rem}
+.completion-section p{font-weight:300;font-size:1rem;line-height:1.8;max-width:550px;margin:0 auto 1.5rem}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb{max-width:800px;margin:0 auto;padding:1rem 1.5rem 0;font-size:.8rem;font-weight:400;opacity:.6}
+.breadcrumb a{color:var(--orange);opacity:1;transition:opacity .2s}
+.breadcrumb a:hover{opacity:.7}
+.breadcrumb span{margin:0 .4rem}
+
+/* ===== KEY TAKEAWAY ===== */
+.takeaway{background:rgba(206,127,72,.08);border-left:3px solid var(--orange);border-radius:0 8px 8px 0;padding:1rem 1.25rem;margin:1rem 0}
+.takeaway p{font-weight:400;font-size:.9rem;color:var(--orange);margin:0}
+
+/* ===== ENROLL SECTION ===== */
+.enroll-section{text-align:center;padding:4rem 1.5rem;background:var(--graphite);border-radius:16px;max-width:600px;margin:0 auto}
+.enroll-section h2{font-family:var(--font-head);font-size:clamp(1.6rem,4vw,2.2rem);color:var(--orange);letter-spacing:.05em;margin-bottom:.75rem}
+.enroll-section p{font-weight:300;font-size:.95rem;max-width:450px;margin:0 auto 2rem;opacity:.85}
+.enroll-input{display:flex;gap:.75rem;max-width:400px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.enroll-input input{flex:1;min-width:200px;padding:.75rem 1rem;border-radius:6px;border:1px solid rgba(206,127,72,.3);background:var(--carbon);color:var(--sage);font-family:var(--font-body);font-size:.9rem;outline:none;transition:border-color .3s}
+.enroll-input input:focus{border-color:var(--orange)}
+.enroll-input input::placeholder{color:var(--sage);opacity:.4}
